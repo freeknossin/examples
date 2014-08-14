@@ -7,7 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Canvas Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Canvas.Top="80" Canvas.Left="80" 
+                   FontSize="24"
+                   Text="This Text will be compressed"></TextBlock>
 
-    </Grid>
+        <TextBlock Canvas.Top="120" Canvas.Left="80" 
+                   FontSize="24"
+                   Name="ResulTextBlock"
+                   Text="..."></TextBlock>
+        
+        <Button Canvas.Top="160" Canvas.Left="80"
+                FontSize="24"
+                Click="ButtonBase_OnClick">
+            Compress and decompress
+        </Button>
+    </Canvas>
 </Page>
